@@ -13,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <section>
+          <div>상단 네비게이션 바</div>
+        </section>
+        <section>{children}</section>
+      </body>
     </html>
   );
 }
