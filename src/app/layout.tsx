@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "OBO's Portfolio",
@@ -15,7 +16,18 @@ export default function RootLayout({
     <html>
       <body>
         <section>
-          <div>상단 네비게이션 바</div>
+          <nav
+            style={{
+              fontFamily: "PF스타더스트",
+            }}
+          >
+            <Link href="/" className="text-[40px]">
+              Home
+            </Link>
+          </nav>
+          <div>
+            <Link href="/create">Create</Link>
+          </div>
         </section>
         <section>{children}</section>
       </body>
