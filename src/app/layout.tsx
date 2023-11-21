@@ -15,20 +15,25 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <section>
-          <nav
-            style={{
-              fontFamily: "PF스타더스트",
-            }}
-          >
+        <nav
+          className="flex flex-row flex-0 justify-between items-center bg-gray-800 text-white px-4 w-full h-[60px] fixed top-0 z-10"
+          style={{
+            fontFamily: "PF스타더스트",
+          }}
+        >
+          <div className="w-[25%]">
             <Link href="/" className="text-[40px]">
               Home
             </Link>
-          </nav>
-          <div>
-            <Link href="/create">Create</Link>
           </div>
-        </section>
+          <div className="flex flex-1 justify-evenly font-bold">
+            <Link href="/aboutme">About Me</Link>
+            <Link href="/skills">Skills</Link>
+            <Link href="/archiving">Archiving</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/career">Career</Link>
+          </div>
+        </nav>
         <section>{children}</section>
       </body>
     </html>
