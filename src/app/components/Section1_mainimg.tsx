@@ -20,7 +20,8 @@ const Section1 = () => {
             <span className="text-[40px]">개발자 포트폴리오</span>
           </div>
           <div className="flex flex-col justify-center items-center mt-[80px] text-[20px] text-white">
-            <span>업무의 성과는 내 실력에 비례하지 않고,</span>
+            <span>업무의 성과는</span>
+            <span>능력에 비례하지 않고,</span>
             <span>나의 열정에 비례한다.</span>
           </div>
         </div>

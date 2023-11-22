@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link";
+import TopNavBar from "./components/TopNavBar";
 
 export const metadata: Metadata = {
   title: "OBO's Portfolio",
@@ -15,25 +15,9 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <nav
-          className="flex flex-row flex-0 justify-between items-center bg-gray-800 text-white px-4 w-full h-[60px] fixed top-0 z-10"
-          style={{
-            fontFamily: "PF스타더스트",
-          }}
-        >
-          <div className="w-[25%]">
-            <Link href="/" className="text-[40px]">
-              Home
-            </Link>
-          </div>
-          <div className="flex flex-1 justify-evenly font-bold">
-            <Link href="/aboutme">About Me</Link>
-            <Link href="/skills">Skills</Link>
-            <Link href="/archiving">Archiving</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/career">Career</Link>
-          </div>
-        </nav>
+        <section>
+          <TopNavBar />
+        </section>
         <section>{children}</section>
       </body>
     </html>
