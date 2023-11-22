@@ -30,11 +30,12 @@ const Section2 = () => {
   ];
 
   return (
-    <div className="bg-slate-300 p-4">
-      <div>
-        <h1>ABOUT ME</h1>
+    <div className="p-4">
+      <div className="flex justify-center items-center">
+        <h1 className="text-[34px] mr-2">ABOUT ME</h1>
+        <span>{MyIcons.HandFist("2x")}</span>
       </div>
-      <div className="">
+      <div className="grid grid-rows-2">
         {items.map((item) => (
           <div
             key={item.id}
@@ -44,7 +45,7 @@ const Section2 = () => {
               {item.icon}
             </div>
             <div
-              className="flex flex-col justify-center items-center text-[20px] min-w-[240px]"
+              className="flex flex-col flex-1 justify-center items-center text-[20px]"
               style={{ fontFamily: "PF스타더스트" }}
             >
               <span>{item.title}</span>
