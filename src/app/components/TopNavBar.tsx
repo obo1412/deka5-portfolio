@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import * as MyIcons from "../../../public/asset/icons/MyIcons";
 
 const TopNavBar = () => {
   const menuArr = [
@@ -52,10 +53,14 @@ const TopNavBar = () => {
         <div className="flex sm:hidden p-4">
           <button
             type="button"
-            className="border rounded-lg p-2 flex justify-center items-center w-[50px] hover:bg-slate-500"
+            className={`border rounded-lg p-2 flex justify-center items-center w-[50px] hover:bg-slate-500 ${
+              !openMenu && "bg-gray-400"
+            }`}
             onClick={clickedMenuButton}
           >
-            <span className="w-[24px] h-[24px] bg-red-600 hover:bg-red-400 rounded-full"></span>
+            <span className="w-[24px] h-[24px] rounded-full flex justify-center items-center">
+              {MyIcons.Bars("lg")}
+            </span>
           </button>
         </div>
       </div>
