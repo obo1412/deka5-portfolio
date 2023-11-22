@@ -1,7 +1,13 @@
 import React from "react";
+import * as MyIcons from "../../../public/asset/icons/MyIcons";
 
 const Section5 = () => {
-  return <div>프로젝트</div>;
+  return (
+    <div className="flex justify-center items-center">
+      <h1 className="text-[34px] mr-2">PROJECTS</h1>
+      <span>{MyIcons.DiagramPropject("2x")}</span>
+    </div>
+  );
 };
 
 export default Section5;

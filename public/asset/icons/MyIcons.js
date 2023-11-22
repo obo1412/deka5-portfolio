@@ -1,5 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faHandBackFist,
+  faHandFist,
+  faWandMagicSparkles,
+  faBoxOpen,
+  faDiagramProject,
+  faMedal,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faUser as faUserReg,
   faCalendarCheck as faCalendarCheckReg,
@@ -32,4 +40,36 @@ export function Envelope(size, color) {
 // 주소지
 export function AddressBook(size, color) {
   return <FontAwesomeIcon icon={faAddressBookReg} size={size} color={color} />;
+}
+
+// 어바웃미 옆 주먹 손등방향
+export function HandBackFist(size, color) {
+  return <FontAwesomeIcon icon={faHandBackFist} size={size} color={color} />;
+}
+
+// 어바웃미 옆 주먹 손바닥방향
+export function HandFist(size, color) {
+  return <FontAwesomeIcon icon={faHandFist} size={size} color={color} />;
+}
+
+// 스킬 옆 매직 완드
+export function WandMagicSparkles(size, color) {
+  return (
+    <FontAwesomeIcon icon={faWandMagicSparkles} size={size} color={color} />
+  );
+}
+
+// 아카이브 박스
+export function BoxOpen(size, color) {
+  return <FontAwesomeIcon icon={faBoxOpen} size={size} color={color} />;
+}
+
+// 프로젝트 다이아그램
+export function DiagramPropject(size, color) {
+  return <FontAwesomeIcon icon={faDiagramProject} size={size} color={color} />;
+}
+
+// 커리어 옆 메달
+export function Medal(size, color) {
+  return <FontAwesomeIcon icon={faMedal} size={size} color={color} />;
 }
