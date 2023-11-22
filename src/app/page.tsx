@@ -7,7 +7,7 @@ import Section6 from "./components/Section6_career";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <section>
         <Section1 />
       </section>
