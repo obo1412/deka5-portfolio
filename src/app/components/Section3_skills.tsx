@@ -132,15 +132,15 @@ const Section3 = () => {
 
   return (
     <div className="px-4 py-6 bg-[#f9c51d]">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-4">
         <h1 className="text-[34px] mr-4">SKILLS</h1>
         <span>{MyIcons.WandMagicSparkles("2x")}</span>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
         {Object.keys(skillstack).map((key, index) => (
           <div
             key={index}
-            className={`${key} bg-white rounded-lg p-2 flex flex-col justify-start items-center px-10`}
+            className={`${key} bg-white rounded-lg p-2 flex flex-1 flex-col justify-start items-center px-10 mb-4 break-inside-avoid`}
           >
             <div className="text-[34px] text-[#c99700] border-b-2 w-full flex justify-center">
               <span>{key}</span>
