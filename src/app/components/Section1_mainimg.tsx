@@ -7,7 +7,8 @@ const Section1 = () => {
       <Image
         src="/asset/image/main-img.jpg"
         alt="main-image"
-        layout="fill"
+        priority
+        fill
         className="z-0"
       />
       <div className="relative top-[110px] flex justify-center items-center">
