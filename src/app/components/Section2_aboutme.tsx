@@ -39,7 +39,7 @@ const Section2 = () => {
   return (
     <div className="px-4 py-6">
       <div className="flex justify-center items-center">
-        <h1 className="text-[34px] mr-4">ABOUT ME</h1>
+        <h1 className="mr-4">ABOUT ME</h1>
         <span>{MyIcons.HandFist("2x")}</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">

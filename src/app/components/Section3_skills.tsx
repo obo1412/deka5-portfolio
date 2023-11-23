@@ -133,14 +133,14 @@ const Section3 = () => {
   return (
     <div className="px-4 py-6 bg-[#f9c51d]">
       <div className="flex justify-center items-center mb-4">
-        <h1 className="text-[34px] mr-4">SKILLS</h1>
+        <h1 className="mr-4">SKILLS</h1>
         <span>{MyIcons.WandMagicSparkles("2x")}</span>
       </div>
       <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
         {Object.keys(skillstack).map((key, index) => (
           <div
             key={index}
-            className={`${key} bg-white rounded-lg p-2 flex flex-1 flex-col justify-start items-center px-10 mb-4 break-inside-avoid`}
+            className={`${key} bg-white rounded-lg p-2 flex flex-1 flex-col justify-start items-center px-10 mb-4 break-inside-avoid hover:-translate-y-1`}
           >
             <div className="text-[34px] text-[#c99700] border-b-2 w-full flex justify-center">
               <span>{key}</span>
