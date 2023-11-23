@@ -30,8 +30,19 @@ const TopNavBar = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
 
+  // 메뉴 버튼
   const clickedMenuButton = () => {
     setOpenMenu(!openMenu);
+  };
+
+  // home 버튼 상단으로 이동
+  const clickedHomeMoveToTop = (e: any) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -44,8 +55,9 @@ const TopNavBar = () => {
       <div className="flex flex-row justify-between w-full">
         <div className="flex justify-center items-center p-1 ml-3">
           <Link
-            href="/"
+            href="#"
             className="text-[36px] hover:border rounded-md p-1 hover:bg-slate-500 hover:bg-opacity-50"
+            onClick={clickedHomeMoveToTop}
           >
             Home
           </Link>
