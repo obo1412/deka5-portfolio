@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 
@@ -29,17 +30,25 @@ const Section2 = () => {
     },
   ];
 
+  const clickedAboutMeBlock = (event: any, title: string) => {
+    if (title !== "이메일") {
+      event.preventDefault();
+    }
+  };
+
   return (
-    <div className="p-4">
+    <div className="px-4 py-6">
       <div className="flex justify-center items-center">
-        <h1 className="text-[34px] mr-2">ABOUT ME</h1>
+        <h1 className="text-[34px] mr-4">ABOUT ME</h1>
         <span>{MyIcons.HandFist("2x")}</span>
       </div>
-      <div className="grid grid-rows-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {items.map((item) => (
-          <div
+          <a
             key={item.id}
-            className="flex flex-row justify-start items-center border rounded-md p-2 mt-1"
+            href={item.title === "이메일" ? `mailto:${item.content}` : "#"}
+            className="flex flex-row justify-start items-center border rounded-md p-2 mt-1 hover:bg-gray-200 hover:-translate-y-1 cursor-pointer"
+            onClick={(event) => clickedAboutMeBlock(event, item.title)}
           >
             <div className="mx-4 min-w-[40px] flex justify-center items-center">
               {item.icon}
@@ -51,7 +60,7 @@ const Section2 = () => {
               <span>{item.title}</span>
               <span>{item.content}</span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
