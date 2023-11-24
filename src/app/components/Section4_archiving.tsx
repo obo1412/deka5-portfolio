@@ -9,7 +9,7 @@ const Section4 = ({ refMove }: any) => {
     <div className="px-4 py-6 bg-[#402E32]" ref={refMove}>
       <div className="flex justify-center items-center mb-4">
         <h1 className="mr-4 text-white">ARCHIVING</h1>
-        <span>{MyIcons.BoxOpen("2x", "white")}</span>
+        <span>{MyIcons.DiagramProject("2x", "white")}</span>
       </div>
       <div
         className="flex justify-center items-center hover:-translate-y-2"

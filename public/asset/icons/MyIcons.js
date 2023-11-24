@@ -65,7 +65,7 @@ export function BoxOpen(size, color) {
 }
 
 // 프로젝트 다이아그램
-export function DiagramPropject(size, color) {
+export function DiagramProject(size, color) {
   return <FontAwesomeIcon icon={faDiagramProject} size={size} color={color} />;
 }
 
