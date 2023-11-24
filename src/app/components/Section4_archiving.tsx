@@ -2,14 +2,14 @@ import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 import Image from "next/image";
 
-const Section4 = ({ refMove }: any) => {
+const Section4 = ({ refMove, title }: any) => {
   const linkAddr = "https://github.com/obo1412";
 
   return (
     <div className="px-4 py-6 bg-[#402E32]" ref={refMove}>
       <div className="flex justify-center items-center mb-4">
-        <h1 className="mr-4 text-white">ARCHIVING</h1>
-        <span>{MyIcons.DiagramProject("2x", "white")}</span>
+        <h1 className="mr-4 text-white">{title.name.toUpperCase()}</h1>
+        <span>{title.icon}</span>
       </div>
       <div
         className="flex justify-center items-center hover:-translate-y-2"

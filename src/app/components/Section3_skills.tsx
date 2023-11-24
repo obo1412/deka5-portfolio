@@ -2,7 +2,7 @@ import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 import Image from "next/image";
 
-const Section3 = ({ refMove }: any) => {
+const Section3 = ({ refMove, title }: any) => {
   const skillstack: any = {
     FrontEnd: [
       {
@@ -133,8 +133,8 @@ const Section3 = ({ refMove }: any) => {
   return (
     <div className="px-4 py-6 bg-[#f9c51d]" ref={refMove}>
       <div className="flex justify-center items-center mb-4">
-        <h1 className="mr-4">SKILLS</h1>
-        <span>{MyIcons.WandMagicSparkles("2x")}</span>
+        <h1 className="mr-4">{title.name.toUpperCase()}</h1>
+        <span>{title.icon}</span>
       </div>
       <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
         {Object.keys(skillstack).map((key, index) => (

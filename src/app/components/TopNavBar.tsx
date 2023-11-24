@@ -4,42 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 
-const TopNavBar = ({
-  moveToSection2,
-  moveToSection3,
-  moveToSection4,
-  moveToSection5,
-  moveToSection6,
-}: any) => {
-  const menuArr = [
-    {
-      id: 2,
-      name: "About Me",
-      onclick: moveToSection2,
-    },
-    {
-      id: 3,
-      name: "Skills",
-      onclick: moveToSection3,
-    },
-    {
-      id: 4,
-      name: "Archiving",
-      onclick: moveToSection4,
-    },
-    {
-      id: 5,
-      name: "Projects",
-      onclick: moveToSection5,
-    },
-    {
-      id: 6,
-      name: "Career",
-      onclick: moveToSection6,
-    },
-  ];
-  // 메뉴 버튼 스테이트
-  const [openMenu, setOpenMenu] = useState(false);
+const TopNavBar = ({ menuArr, openMenu, setOpenMenu }: any) => {
   // 탑바 배경색 통제용 스테이트
   const [topBarBgToggle, setTopBarBgToggle] = useState(false);
 
@@ -56,6 +21,7 @@ const TopNavBar = ({
       left: 0,
       behavior: "smooth",
     });
+    setOpenMenu(false);
   };
 
   const currentScreenY = () => {
@@ -112,7 +78,7 @@ const TopNavBar = ({
           !openMenu && "hidden"
         } flex sm:flex flex-col sm:flex-row justify-evenly font-bold w-full sm:min-w-[440px] px-2`}
       >
-        {menuArr.map((menuItem) => (
+        {menuArr.map((menuItem: any) => (
           <Link
             href="#"
             key={menuItem.id}
