@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 
@@ -38,8 +38,10 @@ const TopNavBar = ({
       onclick: moveToSection6,
     },
   ];
-
+  // 메뉴 버튼 스테이트
   const [openMenu, setOpenMenu] = useState(false);
+  // 탑바 배경색 통제용 스테이트
+  const [topBarBgToggle, setTopBarBgToggle] = useState(false);
 
   // 메뉴 버튼
   const clickedMenuButton = () => {
@@ -56,9 +58,27 @@ const TopNavBar = ({
     });
   };
 
+  const currentScreenY = () => {
+    if (window.scrollY > 0) {
+      setTopBarBgToggle(true);
+    } else {
+      setTopBarBgToggle(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", currentScreenY, { capture: true });
+
+    return () => {
+      window.removeEventListener("scroll", currentScreenY);
+    };
+  }, []);
+
   return (
     <nav
-      className="flex flex-col sm:flex-row justify-between items-center bg-gray-800 bg-opacity-80 text-white w-full fixed top-0 z-10"
+      className={`flex flex-col sm:flex-row justify-between items-center bg-gray-800 text-white w-full fixed top-0 z-10 ${
+        topBarBgToggle ? "" : "bg-opacity-70"
+      }`}
       style={{
         fontFamily: "PF스타더스트",
       }}
@@ -89,7 +109,7 @@ const TopNavBar = ({
       </div>
       <div
         className={`${
-          openMenu && "hidden"
+          !openMenu && "hidden"
         } flex sm:flex flex-col sm:flex-row justify-evenly font-bold w-full sm:min-w-[440px] px-2`}
       >
         {menuArr.map((menuItem) => (
