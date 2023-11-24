@@ -14,6 +14,7 @@
 
 body {
   font-family: "Neodgm";
+  box-sizing: border-box;
 }
 
 body h1 {
