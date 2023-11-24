@@ -4,27 +4,38 @@ import React, { useState } from "react";
 import Link from "next/link";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 
-const TopNavBar = () => {
+const TopNavBar = ({
+  moveToSection2,
+  moveToSection3,
+  moveToSection4,
+  moveToSection5,
+  moveToSection6,
+}: any) => {
   const menuArr = [
     {
-      id: 1,
-      name: "About Me",
-    },
-    {
       id: 2,
-      name: "Skills",
+      name: "About Me",
+      onclick: moveToSection2,
     },
     {
       id: 3,
-      name: "Archiving",
+      name: "Skills",
+      onclick: moveToSection3,
     },
     {
       id: 4,
-      name: "Projects",
+      name: "Archiving",
+      onclick: moveToSection4,
     },
     {
       id: 5,
+      name: "Projects",
+      onclick: moveToSection5,
+    },
+    {
+      id: 6,
       name: "Career",
+      onclick: moveToSection6,
     },
   ];
 
@@ -83,9 +94,10 @@ const TopNavBar = () => {
       >
         {menuArr.map((menuItem) => (
           <Link
-            href="/"
+            href="#"
             key={menuItem.id}
             className="my-1 hover:border p-2 rounded-md hover:bg-slate-500 hover:bg-opacity-50"
+            onClick={menuItem.onclick}
           >
             {menuItem.name}
           </Link>

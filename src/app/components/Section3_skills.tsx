@@ -2,7 +2,7 @@ import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 import Image from "next/image";
 
-const Section3 = () => {
+const Section3 = ({ refMove }: any) => {
   const skillstack: any = {
     FrontEnd: [
       {
@@ -131,7 +131,7 @@ const Section3 = () => {
   };
 
   return (
-    <div className="px-4 py-6 bg-[#f9c51d]">
+    <div className="px-4 py-6 bg-[#f9c51d]" ref={refMove}>
       <div className="flex justify-center items-center mb-4">
         <h1 className="mr-4">SKILLS</h1>
         <span>{MyIcons.WandMagicSparkles("2x")}</span>

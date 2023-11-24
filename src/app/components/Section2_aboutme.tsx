@@ -2,7 +2,7 @@
 import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 
-const Section2 = () => {
+const Section2 = ({ refMove }: any) => {
   const items = [
     {
       id: 1,
@@ -37,7 +37,7 @@ const Section2 = () => {
   };
 
   return (
-    <div className="px-4 py-6">
+    <div className="px-4 py-6" ref={refMove}>
       <div className="flex justify-center items-center">
         <h1 className="mr-4">ABOUT ME</h1>
         <span>{MyIcons.HandFist("2x")}</span>

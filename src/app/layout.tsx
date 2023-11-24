@@ -14,12 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
-        <section>
-          <TopNavBar />
-        </section>
-        <section>{children}</section>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

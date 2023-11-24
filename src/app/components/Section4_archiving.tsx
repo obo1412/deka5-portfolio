@@ -2,11 +2,11 @@ import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
 import Image from "next/image";
 
-const Section4 = () => {
+const Section4 = ({ refMove }: any) => {
   const linkAddr = "https://github.com/obo1412";
 
   return (
-    <div className="px-4 py-6 bg-[#402E32]">
+    <div className="px-4 py-6 bg-[#402E32]" ref={refMove}>
       <div className="flex justify-center items-center mb-4">
         <h1 className="mr-4 text-white">ARCHIVING</h1>
         <span>{MyIcons.BoxOpen("2x", "white")}</span>
