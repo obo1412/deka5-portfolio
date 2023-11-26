@@ -76,7 +76,7 @@ const TopNavBar = ({ menuArr, openMenu, setOpenMenu }: any) => {
       <div
         className={`${
           !openMenu && "hidden"
-        } flex sm:flex flex-col sm:flex-row justify-evenly font-bold w-full sm:min-w-[440px] px-2`}
+        } flex sm:flex flex-col sm:flex-row justify-evenly font-bold w-full sm:min-w-[470px] px-2`}
       >
         {menuArr.map((menuItem: any) => (
           <Link
