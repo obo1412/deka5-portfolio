@@ -1,5 +1,4 @@
 import React from "react";
-import * as MyIcons from "../../../public/asset/icons/MyIcons";
 import Image from "next/image";
 
 const Section4 = ({ refMove, title }: any) => {
