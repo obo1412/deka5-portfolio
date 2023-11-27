@@ -57,7 +57,7 @@ const Section2 = ({ refMove, title }: any) => {
               className="flex flex-col flex-1 justify-center items-center text-[20px]"
               style={{ fontFamily: "PF스타더스트" }}
             >
-              <span className="flex">{item.title}</span>
+              <span className="">{item.title}</span>
               <span>{item.content}</span>
             </div>
           </a>
