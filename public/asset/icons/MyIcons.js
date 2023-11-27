@@ -1,19 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faHandBackFist,
-  faHandFist,
-  faWandMagicSparkles,
-  faBoxOpen,
-  faDiagramProject,
-  faMedal,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faUser as faUserReg,
-  faCalendarCheck as faCalendarCheckReg,
-  faEnvelope as faEnvelopeReg,
-  faAddressBook as faAddressBookReg,
-} from "@fortawesome/free-regular-svg-icons";
+// import {
+//   faBars,
+//   faHandBackFist,
+//   faHandFist,
+//   faWandMagicSparkles,
+//   faBoxOpen,
+//   faDiagramProject,
+//   faMedal,
+// } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
+import { faHandBackFist } from "@fortawesome/free-solid-svg-icons/faHandBackFist";
+import { faHandFist } from "@fortawesome/free-solid-svg-icons/faHandFist";
+import { faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons/faWandMagicSparkles";
+import { faBoxOpen } from "@fortawesome/free-solid-svg-icons/faBoxOpen";
+import { faDiagramProject } from "@fortawesome/free-solid-svg-icons/faDiagramProject";
+import { faMedal } from "@fortawesome/free-solid-svg-icons/faMedal";
+
+import { faUser as faUserReg } from "@fortawesome/free-regular-svg-icons/faUser";
+import { faCalendarCheck as faCalendarCheckReg } from "@fortawesome/free-regular-svg-icons/faCalendarCheck";
+import { faEnvelope as faEnvelopeReg } from "@fortawesome/free-regular-svg-icons/faEnvelope";
+import { faAddressBook as faAddressBookReg } from "@fortawesome/free-regular-svg-icons/faAddressBook";
 
 // 메뉴 햄버거 버튼
 export function Bars(size, color) {
