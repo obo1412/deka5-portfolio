@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import TopNavBar from "./components/TopNavBar";
 import Section1 from "./components/Section1_mainimg";
 import Section2 from "./components/Section2_aboutme";
@@ -8,6 +8,7 @@ import Section4 from "./components/Section4_archiving";
 import Section5 from "./components/Section5_projects";
 import Section6 from "./components/Section6_career";
 import * as MyIcons from "../../public/asset/icons/MyIcons";
+import * as MyUtils from "../../public/utils/MyUtils";
 
 export default function Home() {
   const refMove2 = useRef<any>(null);
@@ -18,6 +19,8 @@ export default function Home() {
 
   // 메뉴 버튼 스테이트
   const [openMenu, setOpenMenu] = useState(false);
+  // 접속 os 판별하기
+  const [isWin, setIsWin] = useState(false);
 
   const moveToSection2 = (event: any) => {
     event.preventDefault();
@@ -93,6 +96,12 @@ export default function Home() {
     },
   ];
 
+  useEffect(() => {
+    if (MyUtils.checkUserOS(["Win"])) {
+      setIsWin(true);
+    }
+  }, []);
+
   return (
     <div>
       <section>
@@ -106,13 +115,13 @@ export default function Home() {
         <Section1 />
       </section>
       <section>
-        <Section2 refMove={refMove2} title={menuArr[0]} />
+        <Section2 refMove={refMove2} title={menuArr[0]} isWin={isWin} />
       </section>
       <section>
         <Section3 refMove={refMove3} title={menuArr[1]} />
       </section>
       <section>
-        <Section4 refMove={refMove4} title={menuArr[2]} />
+        <Section4 refMove={refMove4} title={menuArr[2]} isWin={isWin} />
       </section>
       <section>
         <Section5 refMove={refMove5} title={menuArr[3]} />
