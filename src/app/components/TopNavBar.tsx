@@ -53,10 +53,17 @@ const TopNavBar = ({ menuArr, openMenu, setOpenMenu }: any) => {
         <div className="flex justify-center items-center p-1 ml-3">
           <Link
             href="#"
-            className="text-[36px] hover:border rounded-md p-1 hover:bg-slate-500 hover:bg-opacity-50"
+            className="hidden sm:block text-[36px] hover:border rounded-md p-1 hover:bg-slate-500 hover:bg-opacity-50"
             onClick={clickedHomeMoveToTop}
           >
             Home
+          </Link>
+          <Link
+            href="#"
+            className="sm:hidden text-[36px] hover:border rounded-md p-1 hover:bg-slate-500 hover:bg-opacity-50"
+            onClick={clickedHomeMoveToTop}
+          >
+            {MyIcons.House()}
           </Link>
         </div>
         <div className="flex sm:hidden p-4">

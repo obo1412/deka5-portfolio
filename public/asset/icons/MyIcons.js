@@ -15,11 +15,17 @@ import { faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons/faWandMag
 import { faBoxOpen } from "@fortawesome/free-solid-svg-icons/faBoxOpen";
 import { faDiagramProject } from "@fortawesome/free-solid-svg-icons/faDiagramProject";
 import { faMedal } from "@fortawesome/free-solid-svg-icons/faMedal";
+import { faHouse } from "@fortawesome/free-solid-svg-icons/faHouse";
 
 import { faUser as faUserReg } from "@fortawesome/free-regular-svg-icons/faUser";
 import { faCalendarCheck as faCalendarCheckReg } from "@fortawesome/free-regular-svg-icons/faCalendarCheck";
 import { faEnvelope as faEnvelopeReg } from "@fortawesome/free-regular-svg-icons/faEnvelope";
 import { faAddressBook as faAddressBookReg } from "@fortawesome/free-regular-svg-icons/faAddressBook";
+
+// 홈 버튼
+export function House(size, color) {
+  return <FontAwesomeIcon icon={faHouse} size={size} color={color} />;
+}
 
 // 메뉴 햄버거 버튼
 export function Bars(size, color) {
