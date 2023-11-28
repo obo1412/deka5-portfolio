@@ -8,6 +8,11 @@ const Section5 = ({ refMove, title }: any) => {
         <h1 className="mr-4 text-white">{title.name.toUpperCase()}</h1>
         <span>{title.icon}</span>
       </div>
+      <div className="flex flex-col items-center px-4">
+        <div className="bg-white rounded-lg w-full max-w-[1024px] min-h-[300px]">
+          asdfasdf
+        </div>
+      </div>
     </div>
   );
 };
