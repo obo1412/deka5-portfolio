@@ -9,123 +9,145 @@ const Section3 = ({ refMove, title }: any) => {
         id: 1,
         title: "html css js",
         img: "/asset/image/skill-stack/front/htmlcssjs.png",
+        showLabel: false,
       },
       {
         id: 2,
-        title: "typescript",
+        title: "Typescript",
         img: "/asset/image/skill-stack/front/ts.png",
+        showLabel: true,
       },
       {
         id: 3,
-        title: "react",
+        title: "React",
         img: "/asset/image/skill-stack/front/react.png",
+        showLabel: false,
       },
       {
         id: 4,
-        title: "recoil",
+        title: "Recoil",
         img: "/asset/image/skill-stack/front/recoil.png",
+        showLabel: false,
       },
       {
         id: 5,
-        title: "nextjs",
+        title: "Nextjs",
         img: "/asset/image/skill-stack/front/nextjs.png",
+        showLabel: false,
       },
       {
         id: 6,
         title: "jQuery",
         img: "/asset/image/skill-stack/front/jquery.png",
+        showLabel: false,
       },
       {
         id: 7,
-        title: "bootstrap",
+        title: "Bootstrap",
         img: "/asset/image/skill-stack/front/bootstrap.png",
+        showLabel: false,
       },
       {
         id: 8,
-        title: "tailwind",
+        title: "Tailwind",
         img: "/asset/image/skill-stack/front/tailwind.png",
+        showLabel: false,
       },
     ],
     BackEnd: [
       {
         id: 1,
-        title: "spring",
+        title: "Spring",
         img: "/asset/image/skill-stack/back/spring.png",
+        showLabel: false,
       },
       {
         id: 2,
-        title: "express",
+        title: "Express",
         img: "/asset/image/skill-stack/back/express.png",
+        showLabel: false,
       },
       {
         id: 3,
-        title: "nestjs",
+        title: "Nestjs",
         img: "/asset/image/skill-stack/back/nestjs.png",
+        showLabel: true,
       },
       {
         id: 4,
-        title: "mysql",
+        title: "Mysql",
         img: "/asset/image/skill-stack/back/mysql.png",
+        showLabel: false,
       },
       {
         id: 5,
-        title: "sqlite",
+        title: "Sqlite",
         img: "/asset/image/skill-stack/back/sqlite.png",
+        showLabel: false,
       },
     ],
     MobileApp: [
       {
         id: 1,
-        title: "reactNative",
+        title: "ReactNative",
         img: "/asset/image/skill-stack/mobile/reactnative.png",
+        showLabel: false,
       },
     ],
     DesktopApp: [
       {
         id: 1,
-        title: "electron",
+        title: "Electron",
         img: "/asset/image/skill-stack/desktop/electron.png",
+        showLabel: true,
       },
     ],
     VersionControl: [
       {
         id: 1,
-        title: "git",
+        title: "Git",
         img: "/asset/image/skill-stack/version-control/git.png",
+        showLabel: false,
       },
       {
         id: 2,
-        title: "gitHub",
+        title: "GitHub",
         img: "/asset/image/skill-stack/version-control/github.png",
+        showLabel: false,
       },
       {
         id: 3,
-        title: "bitBucket",
+        title: "BitBucket",
         img: "/asset/image/skill-stack/version-control/bitbucket.png",
+        showLabel: true,
       },
     ],
     Communication: [
       {
         id: 1,
-        title: "jira",
+        title: "Jira",
         img: "/asset/image/skill-stack/communication/jira.png",
+        showLabel: false,
       },
       {
         id: 2,
-        title: "confluence",
+        title: "Confluence",
         img: "/asset/image/skill-stack/communication/confluence.png",
+        showLabel: false,
       },
     ],
     Deployment: [
       {
         id: 1,
-        title: "jenkins",
+        title: "Jenkins",
         img: "/asset/image/skill-stack/deployment/jenkins.png",
+        showLabel: false,
       },
       {
         id: 2,
-        title: "docker",
+        title: "Docker",
         img: "/asset/image/skill-stack/deployment/docker.png",
+        showLabel: false,
       },
     ],
   };
@@ -148,16 +170,25 @@ const Section3 = ({ refMove, title }: any) => {
             {skillstack[key].map((item: any) => (
               <div
                 key={item.id}
-                className="w-full h-[80px] mt-2"
-                style={{ position: "relative" }}
+                className="flex justify-center items-center w-full"
               >
-                <Image
-                  src={item.img}
-                  alt={`logo-${item.title}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{ objectFit: "contain" }}
-                />
+                <div
+                  className="h-[80px] flex-1 min-w-[100px] mt-2"
+                  style={{ position: "relative" }}
+                >
+                  <Image
+                    src={item.img}
+                    alt={`logo-${item.title}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+                {item.showLabel && (
+                  <span className="flex-grow flex justify-center items-center font__san font-bold text-[40px]">
+                    {item.title}
+                  </span>
+                )}
               </div>
             ))}
           </div>

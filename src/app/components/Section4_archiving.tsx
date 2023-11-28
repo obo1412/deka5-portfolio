@@ -19,19 +19,11 @@ const Section4 = ({ refMove, title, isWin }: any) => {
           <div className="flex flex-row justify-center items-center">
             <span>
               <Image
-                src={"/asset/image/skill-stack/version-control/github-logo.png"}
-                alt="github-logo"
-                width={50}
-                height={50}
-                className="mr-3"
-              />
-            </span>
-            <span>
-              <Image
                 src={"/asset/image/skill-stack/version-control/github.png"}
                 alt="github-text"
                 width={150}
-                height={50}
+                height={60}
+                style={{ width: "auto" }}
               />
             </span>
           </div>
