@@ -182,6 +182,7 @@ const Section3 = ({ refMove, title }: any) => {
         <h1 className="mr-4">{title.name.toUpperCase()}</h1>
         <span>{title.icon}</span>
       </div>
+      {/* 엔지니어 파트 */}
       <div className="flex flex-col">
         <span className="text-[30px] text-center mb-2">- Engineer Part -</span>
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 mb-8">
@@ -221,6 +222,7 @@ const Section3 = ({ refMove, title }: any) => {
           ))}
         </div>
       </div>
+      {/* 개발자 파트 */}
       <div className="flex flex-col">
         <span className="text-[30px] text-center mb-2">- Developer Part -</span>
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
