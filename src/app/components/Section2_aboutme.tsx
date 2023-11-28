@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
+import * as MyUtils from "../../../public/utils/MyUtils";
 
 const Section2 = ({ refMove, title }: any) => {
   const items = [
@@ -55,9 +56,13 @@ const Section2 = ({ refMove, title }: any) => {
             </div>
             <div
               className="flex flex-col flex-1 justify-center items-center text-[20px]"
-              // style={{ fontFamily: "PF스타더스트" }}
+              style={
+                MyUtils.checkUserOS(["Win"])
+                  ? { fontFamily: "PF스타더스트" }
+                  : {}
+              }
             >
-              <span className="">{item.title}</span>
+              <span>{item.title}</span>
               <span>{item.content}</span>
             </div>
           </a>

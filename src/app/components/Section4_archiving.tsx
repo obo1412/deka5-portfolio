@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import * as MyUtils from "../../../public/utils/MyUtils";
 
 const Section4 = ({ refMove, title }: any) => {
   const linkAddr = "https://github.com/obo1412";
@@ -39,7 +40,12 @@ const Section4 = ({ refMove, title }: any) => {
             </span>
           </div>
           <span className="flex justify-center text-[#258DE0]">{linkAddr}</span>
-          <div className="mt-1 px-6 text-[18px]">
+          <div
+            className="mt-1 px-6 text-[18px]"
+            style={
+              MyUtils.checkUserOS(["Win"]) ? { fontFamily: "PF스타더스트" } : {}
+            }
+          >
             <ul className=" list-disc">
               <li>과거 프로젝트 소스 코드</li>
               <li>토이(사이드)프로젝트 소스 코드</li>
