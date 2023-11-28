@@ -34,3 +34,7 @@ body {
 body h1 {
   font-size: 60px;
 }
+
+.font__stardust {
+  font-family: "pf스타더스트";
+}

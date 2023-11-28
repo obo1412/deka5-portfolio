@@ -54,8 +54,9 @@ const Section2 = ({ refMove, title, isWin }: any) => {
               {item.icon}
             </div>
             <div
-              className="flex flex-col flex-1 justify-center items-center text-[20px]"
-              style={isWin ? { fontFamily: "PF스타더스트" } : {}}
+              className={`flex flex-col flex-1 justify-center items-center text-[20px] ${
+                isWin && "font__stardust"
+              }`}
             >
               <span>{item.title}</span>
               <span>{item.content}</span>

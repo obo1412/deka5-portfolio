@@ -10,10 +10,7 @@ const Section4 = ({ refMove, title, isWin }: any) => {
         <h1 className="mr-4 text-white">{title.name.toUpperCase()}</h1>
         <span>{title.icon}</span>
       </div>
-      <div
-        className="flex justify-center items-center hover:-translate-y-2"
-        style={{ fontFamily: "pf스타더스트" }}
-      >
+      <div className="flex justify-center items-center hover:-translate-y-2">
         <a
           target="_blank"
           href={linkAddr}
@@ -38,11 +35,10 @@ const Section4 = ({ refMove, title, isWin }: any) => {
               />
             </span>
           </div>
-          <span className="flex justify-center text-[#258DE0]">{linkAddr}</span>
-          <div
-            className="mt-1 px-6 text-[18px]"
-            style={isWin ? { fontFamily: "PF스타더스트" } : {}}
-          >
+          <span className="flex justify-center text-[#258DE0] font__stardust">
+            {linkAddr}
+          </span>
+          <div className={`mt-1 px-6 text-[18px] ${isWin && "font__stardust"}`}>
             <ul className=" list-disc">
               <li>과거 프로젝트 소스 코드</li>
               <li>토이(사이드)프로젝트 소스 코드</li>
