@@ -173,6 +173,12 @@ const Section3 = ({ refMove, title }: any) => {
         img: "/asset/image/skill-stack/deployment/docker.png",
         showLabel: false,
       },
+      {
+        id: 3,
+        title: "Synology",
+        img: "/asset/image/skill-stack/deployment/synology.png",
+        showLabel: false,
+      },
     ],
   };
 
