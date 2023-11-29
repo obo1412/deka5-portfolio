@@ -9,6 +9,7 @@ import Section5 from "./components/Section5_projects";
 import Section6 from "./components/Section6_career";
 import * as MyIcons from "../../public/asset/icons/MyIcons";
 import * as MyUtils from "../../public/utils/MyUtils";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const refMove2 = useRef<any>(null);
@@ -129,6 +130,9 @@ export default function Home() {
       </section>
       <section>
         <Section6 refMove={refMove6} title={menuArr[4]} />
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );
