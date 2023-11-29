@@ -14,11 +14,8 @@ const Section1 = () => {
       />
       <div className="relative top-[110px] flex justify-center items-center">
         <div className="relative bg-black flex flex-col justify-center items-center p-2 rounded-lg bg-opacity-50">
-          <div
-            style={{ fontFamily: "sans-serif" }}
-            className="flex flex-col justify-center items-center font-bold text-white"
-          >
-            <span className="text-[60px]">- 오병옥 -</span>
+          <div className="flex flex-col justify-center items-center font-bold text-white font__blackHanSans shadow-lg">
+            <span className="text-[60px] font-normal">- 오병옥 -</span>
             <span className="text-[40px]">DevEngineer</span>
             <span className="text-[40px]">PORTFOLIO</span>
           </div>

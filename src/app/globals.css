@@ -26,6 +26,11 @@
   src: url("/fonts/pfstardust/PF스타더스트S Bold.ttf");
 }
 
+@font-face {
+  font-family: "blackHanSans";
+  src: url("/fonts/BlackHanSans-Regular.ttf");
+}
+
 body {
   font-family: "Neodgm";
   box-sizing: border-box;
@@ -37,6 +42,10 @@ body h1 {
 
 .font__san {
   font-family: sans-serif;
+}
+
+.font__blackHanSans {
+  font-family: "blackHanSans";
 }
 
 .font__stardust {
