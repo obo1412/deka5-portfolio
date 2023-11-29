@@ -97,7 +97,8 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    if (MyUtils.checkUserOS(["Win"])) {
+    // 글씨 접속환경에 따라 변경처리
+    if (MyUtils.checkUserOS(["Win", "Android"])) {
       setIsWin(true);
     }
   }, []);
