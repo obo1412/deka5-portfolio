@@ -1,13 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faBars,
-//   faHandBackFist,
-//   faHandFist,
-//   faWandMagicSparkles,
-//   faBoxOpen,
-//   faDiagramProject,
-//   faMedal,
-// } from "@fortawesome/free-solid-svg-icons";
+import { faHandPointRight, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import { faHandBackFist } from "@fortawesome/free-solid-svg-icons/faHandBackFist";
 import { faHandFist } from "@fortawesome/free-solid-svg-icons/faHandFist";
@@ -84,4 +76,14 @@ export function DiagramProject(size, color) {
 // 커리어 옆 메달
 export function Medal(size, color) {
   return <FontAwesomeIcon icon={faMedal} size={size} color={color} />;
+}
+
+// Footer 연락 Contact
+export function Phone(size, color) {
+  return <FontAwesomeIcon icon={faPhone} size={size} color={color} />;
+}
+
+// Footer 연락 우측손가락
+export function HandPointRight(size, color) {
+  return <FontAwesomeIcon icon={faHandPointRight} size={size} color={color} />;
 }
