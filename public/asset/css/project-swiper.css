@@ -1,0 +1,29 @@
+.my__swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.my__swiper__slide {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.my__swiper__slide img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 500px) {
+  .my__swiper__slide {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+}
