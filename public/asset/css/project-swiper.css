@@ -18,7 +18,16 @@
   object-fit: contain;
 }
 
-@media screen and (min-width: 500px) {
+/* 
+  breakpoint
+  sm < 576 px
+  md < 768 px
+  lg < 992 px
+  xl < 1200 px
+  xxl < 1400 px
+*/
+
+@media screen and (max-width: 768px) {
   .my__swiper__slide {
     text-align: center;
     font-size: 18px;
