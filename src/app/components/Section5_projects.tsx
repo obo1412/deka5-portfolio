@@ -24,21 +24,38 @@ const Section5 = ({ refMove, title }: any) => {
                 <div className="columns-1 md:columns-2">
                   <div className="w-full mx-2">
                     {/* 이미지 파트 왼쪽 */}
-                    {item.img.map((imgItem: any, index: number) => (
+                    {item.img.length > 0 ? (
+                      item.img.map((imgItem: any, index: number) => (
+                        <div
+                          key={index}
+                          style={{ position: "relative" }}
+                          className="flex-1 h-[200px] my-1"
+                        >
+                          <Image
+                            src={imgItem.fileDir}
+                            alt={imgItem.fileName}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            style={{ objectFit: "contain" }}
+                          />
+                        </div>
+                      ))
+                    ) : (
                       <div
-                        key={index}
                         style={{ position: "relative" }}
                         className="flex-1 h-[200px] my-1"
                       >
                         <Image
-                          src={imgItem.fileDir}
-                          alt={imgItem.fileName}
+                          src={
+                            "https://deka.co.kr:8527/files/portfolio-deka5/no-image.jpg"
+                          }
+                          alt={"no image"}
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           style={{ objectFit: "contain" }}
                         />
                       </div>
-                    ))}
+                    )}
                   </div>
                   <div className="flex-1 mx-2 break-inside-avoid">
                     {/* 정보 파트 오른쪽 */}
