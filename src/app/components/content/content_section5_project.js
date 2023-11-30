@@ -50,6 +50,40 @@ const ContentProject = {
       },
       img: [],
     },
+    {
+      id: 2,
+      title: "울프 - 우리동네프로선수들",
+      date: "2023.08.01 ~",
+      description:
+        "우리동네에 프로선수는 바로 나! 운동경기장을 쉽게 찾을 수 있게 하며,",
+      detail: {
+        point:
+          "나의 집에서 가까운 운동장 쉽게 검색. 우리동네에서 나의 운동능력 순위를 확인할 수 있고, 우리동네의 스타플레이어들의 움직임을 확인할 수 있습니다.",
+        url: "",
+        frontend: "React",
+        backend: "Express",
+        database: "Mysql",
+        deployment: "Docker - Synology NAS",
+      },
+      img: [],
+    },
+    {
+      id: 3,
+      title: "오손도손",
+      date: "2023.10.01 ~",
+      description:
+        "가족 관계 정리 및 회비 관리 어플리케이션입니다. 자신의 성씨, 본관을 정확히 알고 등록을 하게되면 같은 본관의 회원들을 확인할 수 있습니다. 가족들간 모임을 하게 되면, 회비와 모임에 사용된 비용을 관리할 수 있습니다.",
+      detail: {
+        point:
+          "같은 성씨(본관)을 찾을 수 있습니다. 모임장부 회비관리 처리가 가능합니다.",
+        url: "",
+        frontend: "ReactNative",
+        backend: "Express",
+        database: "Mysql",
+        deployment: "Docker - Synology NAS",
+      },
+      img: [],
+    },
   ],
 };
 
