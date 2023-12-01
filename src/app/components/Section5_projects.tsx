@@ -1,5 +1,6 @@
 import React from "react";
 import * as MyIcons from "../../../public/asset/icons/MyIcons";
+import * as MyUtils from "../../../public/utils/MyUtils";
 import ContentProject from "./content/content_section5_project";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -25,7 +26,15 @@ const Section5 = ({ refMove, title }: any) => {
                 key={item.id}
                 className="bg-white rounded-lg w-full max-w-[1024px] min-h-[300px] mb-8 p-4 flex flex-col items-center"
               >
-                <h1 className="font__blackHanSans text-[36px]">{item.title}</h1>
+                <div className="flex flex-col justify-center items-center">
+                  <h1 className="font__blackHanSans text-[36px]">
+                    {item.title}
+                  </h1>
+                  <div className="text-[18px] text-gray-500 flex flex-col justify-center items-center">
+                    <div>{item.date}</div>
+                    <div className="text-[16px]">{item.type}</div>
+                  </div>
+                </div>
                 <div className="columns-1 md:columns-2 w-full h-full mt-2">
                   <div className="mx-2 w-full h-full break-inside-avoid">
                     {/* 이미지 파트 왼쪽 */}
@@ -67,20 +76,43 @@ const Section5 = ({ refMove, title }: any) => {
                       </div>
                     )}
                   </div>
-                  <div className="flex-1 mx-2 break-inside-avoid">
+                  <div className="flex-1 mx-2 break-inside-avoid font__gothicA1">
                     {/* 정보 파트 오른쪽 */}
-                    <div className="font__san text-[16px]">
+                    <div className="text-[16px] mt-2">
                       {/* 설명 파트 */}
-                      {item.description}
+                      {item.description
+                        .split("\n")
+                        .map((line: string, kndex: number) => (
+                          <span key={kndex}>
+                            {line}
+                            <br />
+                          </span>
+                        ))}
                     </div>
                     <div className="border-t mt-2">
                       {/* 요약 파트 */}
                       {Object.keys(item.detail).map((subKey, jndex) => {
                         if (item.detail[subKey] !== "") {
                           return (
-                            <div key={jndex}>
-                              <span>{subKey}:</span>
-                              <span>{item.detail[subKey]}</span>
+                            <div key={jndex} className="columns-2 flex mt-2">
+                              <div className="flex flex-row items-center w-[110px] mr-2">
+                                <div className="mr-2">•</div>
+                                <div className="font-bold break-inside-avoid">
+                                  {subKey}
+                                </div>
+                              </div>
+                              <div className="break-inside-avoid flex-1">
+                                {MyUtils.makeLineBreakByString(
+                                  item.detail[subKey]
+                                )
+                                  .split("\n")
+                                  .map((line: string, lndex: number) => (
+                                    <span key={lndex}>
+                                      {MyUtils.checkIsURL(line)}
+                                      <br />
+                                    </span>
+                                  ))}
+                              </div>
                             </div>
                           );
                         }
