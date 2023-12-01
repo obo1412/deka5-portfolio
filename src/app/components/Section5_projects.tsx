@@ -27,7 +27,7 @@ const Section5 = ({ refMove, title }: any) => {
                 className="bg-white rounded-lg w-full max-w-[1024px] min-h-[300px] mb-8 p-4 flex flex-col items-center"
               >
                 <div className="flex flex-col justify-center items-center">
-                  <h1 className="font__blackHanSans text-[36px]">
+                  <h1 className="font__blackHanSans text-[34px]">
                     {item.title}
                   </h1>
                   <div className="text-[18px] text-gray-500 flex flex-col justify-center items-center">
