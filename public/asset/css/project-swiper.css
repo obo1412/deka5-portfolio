@@ -7,13 +7,11 @@
   text-align: center;
   font-size: 18px;
   position: relative;
-  width: 360px;
   height: 360px;
 }
 
 .my__swiper__slide img {
   display: block;
-  width: 200px;
   height: 200px;
   object-fit: contain;
 }

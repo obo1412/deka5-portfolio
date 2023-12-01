@@ -36,7 +36,7 @@ const Section5 = ({ refMove, title }: any) => {
                   </div>
                 </div>
                 <div className="columns-1 md:columns-2 w-full h-full mt-2">
-                  <div className="mx-2 w-full h-full break-inside-avoid">
+                  <div className="mx-2 h-full break-inside-avoid">
                     {/* 이미지 파트 왼쪽 */}
                     {item.img.length > 0 ? (
                       <Swiper
