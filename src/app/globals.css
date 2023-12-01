@@ -31,6 +31,11 @@
   src: url("/fonts/BlackHanSans-Regular.ttf");
 }
 
+@font-face {
+  font-family: "gothicA1";
+  src: url("/fonts/gothic-a1/GothicA1-Regular.ttf");
+}
+
 body {
   font-family: "Neodgm";
   box-sizing: border-box;
@@ -50,4 +55,8 @@ body h1 {
 
 .font__stardust {
   font-family: "pf스타더스트";
+}
+
+.font__gothicA1 {
+  font-family: "gothicA1";
 }
