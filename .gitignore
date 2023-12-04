@@ -40,3 +40,4 @@ next-env.d.ts
 
 # eslintrc - mac에서는 next/babel 설정이 필요
 .eslintrc.json
+.eslintrc.json
