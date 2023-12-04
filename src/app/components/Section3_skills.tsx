@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Section3 = ({ refMove, title }: any) => {
   const engineerPart: any = {
-    Design: [
+    Mechanical_Design: [
       {
         id: 1,
         title: "PTC Creo",
@@ -195,7 +195,7 @@ const Section3 = ({ refMove, title }: any) => {
           {Object.keys(engineerPart).map((key, index) => (
             <div
               key={index}
-              className={`${key} bg-white rounded-lg p-2 flex flex-1 flex-col justify-start items-center px-10 mb-4 break-inside-avoid hover:-translate-y-1`}
+              className={`${key} bg-white rounded-lg p-2 flex flex-1 flex-col justify-start items-center px-10 mb-4 break-inside-avoid hover:-translate-y-1 font__gothicA1 font-bold`}
             >
               <div className="text-[34px] text-[#c99700] border-b-2 w-full flex justify-center">
                 <span>{key}</span>
@@ -235,7 +235,7 @@ const Section3 = ({ refMove, title }: any) => {
           {Object.keys(skillstack).map((key, index) => (
             <div
               key={index}
-              className={`${key} bg-white rounded-lg p-2 flex flex-1 flex-col justify-start items-center px-10 mb-4 break-inside-avoid hover:-translate-y-1`}
+              className={`${key} bg-white rounded-lg p-2 flex flex-1 flex-col justify-start items-center px-10 mb-4 break-inside-avoid hover:-translate-y-1 font__gothicA1 font-bold`}
             >
               <div className="text-[34px] text-[#c99700] border-b-2 w-full flex justify-center">
                 <span>{key}</span>
