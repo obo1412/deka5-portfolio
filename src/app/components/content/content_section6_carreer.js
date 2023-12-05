@@ -62,7 +62,7 @@ export const ContentCareer = [
         detail: ["회사 소개 및 비전 제시"],
       },
       {
-        title: "kts 업무관리시스템",
+        title: "kts 업무총괄 관리시스템",
         detail: [
           "여행 일정 등록 관리",
           "가이드 스케줄 관리",
