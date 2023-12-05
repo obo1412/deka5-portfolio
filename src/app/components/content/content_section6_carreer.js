@@ -50,6 +50,29 @@ export const ContentCareer = [
   },
   {
     id: 3,
+    img: [
+      "https://deka.co.kr:8527/files/portfolio-deka5/project/developer/kts/KTS_bus_log.png",
+    ],
+    title: "KoreaTravelStore 여행사",
+    date: "2021.12.25 ~ 2023.02.31",
+    type: "Developer - 직장생활",
+    activity: [
+      {
+        title: "kts 홈페이지",
+        detail: ["회사 소개 및 비전 제시"],
+      },
+      {
+        title: "kts 업무관리시스템",
+        detail: [
+          "여행 일정 등록 관리",
+          "가이드 스케줄 관리",
+          "협력업체 예약 관리",
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
     img: ["/asset/image/career/deka.png"],
     title: "개인프로젝트",
     date: "2019.01.01 ~ ",

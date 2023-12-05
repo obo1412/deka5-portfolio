@@ -44,9 +44,9 @@ const ContentProject = {
         "현재도 서비스 되고 있는 작은 도서관용 도서 대출/반납 웹프로그램입니다.\n 회원정보와 도서정보를 관리할 수 있습니다.\n 도서관을 운영할 때에 도서관리는 단기적인 대출/반납 정보뿐 아니라, 장기적으로 도서 유실 및 도서의 손상까지 고려하여야 합니다.\n 도서수가 십수권일 경우엔 사람의 힘으로 어떤 도서가 사라졌는지, 도서 상태가 좋지 않은지 파악할 수 있습니다. 하지만 도서수가 수천권의 수준으로 늘어날 경우 기계의 도움 없이는 도서 현상태를 추적하기 어렵습니다.\n 따라서 도서관의 형태의 사업장에서 반드시 필요로 하는 도서 관리 프로그램입니다.",
       detail: {
         point:
-          "도서 등록/조회/대출/반납 등 관리기능\n 도서 등록시 외부 API(알라딘 도서) 핸들링\n 대출내역 통계처리\n 도서정보 일괄처리\n 장서점검 기능\n 라벨출력 기능\n 회원 등록/조회/수정/탈퇴\n 도서 및 회원정보 가져오기(txt/excel) 기능\n 게시판 처리",
+          "도서 등록/조회/대출/반납 등 관리기능.\n 도서 등록시 외부 API(알라딘 도서) 핸들링.\n 대출내역 통계처리.\n 도서정보 일괄처리.\n 장서점검 기능.\n 라벨출력 기능.\n 회원 등록/조회/수정/탈퇴.\n 도서 및 회원정보 가져오기(txt/excel) 기능.\n 각종 게시판 관련 기능.",
         url: "http://finebook.co.kr",
-        frontend: "Spring",
+        frontend: "Spring Jsp",
         backend: "JAVA - Spring 전자정부프레임워크",
         database: "Mysql - MariaDB",
         deployment: "Docker - Synology NAS",
@@ -97,6 +97,42 @@ const ContentProject = {
       ],
     },
     {
+      id: 3,
+      title: "여행사 업무총괄 관리시스템 웹",
+      date: "2021.12.25 ~ 2023.02.31",
+      type: "2인 협업 프로젝트",
+      description: "여행사 일정 및 고객사 관리",
+      detail: {
+        point:
+          "여행 일정 등록 관리.\n 가이드 스케줄 관리.\n 협력업체 예약 관리.",
+        url: "",
+        frontend: "React",
+        backend: "Express",
+        database: "Mysql",
+        deployment: "Personal Linux Server",
+      },
+      img: [
+        {
+          id: 1,
+          fileName: "kts",
+          fileDir:
+            "https://deka.co.kr:8527/files/portfolio-deka5/project/developer/kts/01.png",
+        },
+        {
+          id: 2,
+          fileName: "kts",
+          fileDir:
+            "https://deka.co.kr:8527/files/portfolio-deka5/project/developer/kts/02.png",
+        },
+        {
+          id: 3,
+          fileName: "kts",
+          fileDir:
+            "https://deka.co.kr:8527/files/portfolio-deka5/project/developer/kts/03.png",
+        },
+      ],
+    },
+    {
       id: 2,
       title: "울프 - 우리동네프로선수들",
       date: "2023.08.01 ~",
@@ -140,7 +176,7 @@ const ContentProject = {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "오손도손",
       date: "2023.10.01 ~",
       type: "토이 프로젝트",
