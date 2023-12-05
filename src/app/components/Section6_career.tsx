@@ -15,9 +15,9 @@ const Section6 = ({ refMove, title }: any) => {
             key={item.id}
             className="flex flex-wrap border-t-2 border-gray-300 sm:border-0 pt-2"
           >
-            <div className="w-full sm:w-1/3">
+            <div className="w-full sm:w-1/3 px-4">
               {item.img.map((img, index) => (
-                <div key={index} className="min-h-[100px] relative my-1">
+                <div key={index} className="min-h-[200px] relative my-1">
                   <Image
                     src={img}
                     alt={item.title}
@@ -32,24 +32,27 @@ const Section6 = ({ refMove, title }: any) => {
                 </div>
               ))}
             </div>
-            <div className="w-full sm:flex-1 sm:border-l-2 border-gray-400 pl-3 my-8 sm:mt-0 flex flex-col justify-center items-center sm:justify-start sm:items-start">
+            <div className="w-full sm:flex-1 sm:border-l-2 border-gray-400 pl-3 mb-6 sm:mt-0 flex flex-col justify-center items-center sm:justify-start sm:items-start">
               {/* 커리어 타이틀 */}
-              <div className="flex flex-col items-center sm:items-start font-bold">
+              <div className="flex flex-col items-center sm:items-start font-bold mt-2">
                 <div>{item.type}</div>
                 <div className="text-[20px]">{item.title}</div>
                 <div>{item.date}</div>
               </div>
               {/* 커리어 활동 내용 */}
-              <div className="mt-4">
+              <div className="mt-4 font-semibold w-full max-w-[600px]">
                 {item.activity.map((action, index) => (
                   <div key={index}>
                     <div>
-                      <span className="mr-2">•</span>
+                      <span className="mr-2">⬡</span>
                       <span>{action.title}</span>
                     </div>
-                    <div className="ml-6">
+                    <div className="ml-6 mb-2">
                       {action?.detail.map((det, jndex) => (
-                        <div key={jndex}>{det}</div>
+                        <div key={jndex} className="flex">
+                          <span className="mr-1">•</span>
+                          <span>{det}</span>
+                        </div>
                       ))}
                     </div>
                   </div>
