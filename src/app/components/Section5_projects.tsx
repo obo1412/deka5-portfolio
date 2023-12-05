@@ -83,7 +83,7 @@ const Section5 = ({ refMove, title }: any) => {
                       {item.description
                         .split("\n")
                         .map((line: string, kndex: number) => (
-                          <span key={kndex}>
+                          <span key={kndex} className="ml-2">
                             {line}
                             <br />
                           </span>
@@ -96,7 +96,7 @@ const Section5 = ({ refMove, title }: any) => {
                           return (
                             <div key={jndex} className="columns-2 flex mt-2">
                               <div className="flex flex-row items-center w-[110px] mr-2">
-                                <div className="mr-2">•</div>
+                                <div className="mr-2">⬢</div>
                                 <div className="font-bold break-inside-avoid">
                                   {subKey}
                                 </div>
@@ -107,10 +107,13 @@ const Section5 = ({ refMove, title }: any) => {
                                 )
                                   .split("\n")
                                   .map((line: string, lndex: number) => (
-                                    <span key={lndex}>
+                                    <div key={lndex} className="flex">
+                                      {subKey === "point" && (
+                                        <span className="mr-1">•</span>
+                                      )}
                                       {MyUtils.checkIsURL(line)}
                                       <br />
-                                    </span>
+                                    </div>
                                   ))}
                               </div>
                             </div>
