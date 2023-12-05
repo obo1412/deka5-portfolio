@@ -6,7 +6,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "deka.co.kr",
         port: "8527",
-        pathname: "/files/**",
+        pathname: "/files/portfolio-deka5/**",
       },
     ],
   },
