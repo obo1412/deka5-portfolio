@@ -1,6 +1,7 @@
-export default ContentCareer = [
+export const ContentCareer = [
   {
     id: 1,
+    img: ["/asset/image/career/inzi.jfif", "/asset/image/career/inzi.jfif"],
     title: "인지컨트롤스(INZI CONTROLS)",
     date: "2012.11.05 ~ 2018.05.31",
     type: "Engineer - 직장 생활",
@@ -14,16 +15,18 @@ export default ContentCareer = [
         title: "실린더헤드커버 개발",
         detail: [
           "차종: 가솔린엔진 - 카파(경차), 감마(준중형), 세타(중형), 람다(대형)",
-          "디젤엔진 - A2(승합), R(2.0~2.2L) 헤드커버 개발 경험",
+          "디젤엔진 - A2(승합), R(2.0~2.2L) 헤드커버 개발",
+          "오일분리 벤틸레이션 구조 - 멀티임팩터 특허출원 경험있음.",
         ],
       },
     ],
   },
   {
     id: 2,
-    title: "IoT 시스템개발자 교육",
+    img: ["/asset/image/career/inzi.jfif"],
+    title: "IoT 시스템개발자 교육(국비지원)",
     date: "2018.06.01 ~ 2018.12.31",
-    type: "Developer - 국비 지원 교육",
+    type: "Developer - 교육 수료",
     activity: [
       {
         title: "전자정부프레임워크 웹개발 교육 수료",
@@ -37,9 +40,10 @@ export default ContentCareer = [
   },
   {
     id: 3,
-    title: "개인프로젝트 진행중",
+    img: ["/asset/image/career/inzi.jfif"],
+    title: "개인프로젝트",
     date: "2019.01.01 ~ ",
-    type: "개인프로젝트",
+    type: "Developer - 개인 활동",
     activity: [
       {
         title: "웹 - FineBook",
