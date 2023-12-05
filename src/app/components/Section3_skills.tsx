@@ -218,7 +218,7 @@ const Section3 = ({ refMove, title }: any) => {
                     />
                   </div>
                   {item.showLabel && (
-                    <span className="flex-grow flex justify-center items-center font__san font-bold text-[40px]">
+                    <span className="flex-grow flex justify-center items-center font__sans font-bold text-[40px]">
                       {item.title}
                     </span>
                   )}
@@ -258,7 +258,7 @@ const Section3 = ({ refMove, title }: any) => {
                     />
                   </div>
                   {item.showLabel && (
-                    <span className="flex-grow flex justify-center items-center font__san font-bold text-[40px]">
+                    <span className="flex-grow flex justify-center items-center font__sans font-bold text-[40px]">
                       {item.title}
                     </span>
                   )}

@@ -4,7 +4,7 @@ import * as MyIcons from "../../../public/asset/icons/MyIcons";
 const Footer = () => {
   return (
     <div className="px-4 py-6 bg-[#4E4637]">
-      <div className="flex flex-col justify-center items-center text-white text-[20px] font__san">
+      <div className="flex flex-col justify-center items-center text-white text-[20px] font__sans">
         <div className="mr-4 flex">
           <span className="mr-2">Contact Me.</span>
           <div className="hover:text-blue-600 hover:scale-[105%]">
